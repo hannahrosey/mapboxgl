@@ -4,7 +4,7 @@ $.ajax({
   type: "GET",
   data: {
     "$where" : "created_date>'2021-08-26T00:00:00.000' AND created_date<'2021-09-4T00:00:00.000' AND agency='HPD' AND descriptor='HEAVY FLOW'",
-    "$limit" : "500",
+    "$limit" : "50",
     "$$app_token": "NOveDvU9PH6eFY3kHQW7kyWtT"
   }
 }).done(function(leaksData) {
@@ -29,7 +29,7 @@ $.ajax({
   new mapboxgl.Marker({
     color: 'blue'
   })
-    .setLngLat([lD.location.longitude,lD.location.latitude])
+    .setLngLat([lD.longitude,lD.latitude])
     .setPopup(popup)
     .addTo(map);
   })
