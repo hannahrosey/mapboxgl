@@ -37,7 +37,7 @@ $.ajax({
   var map = new mapboxgl.Map({
      container: 'mapContainer', // HTML container id
      style: 'mapbox://styles/mapbox/dark-v9', // style URL
-     center: wspCenter, // starting position as [lng, lat]
+     // center: wspCenter, // starting position as [lng, lat]
      zoom: 11,
    });
 
